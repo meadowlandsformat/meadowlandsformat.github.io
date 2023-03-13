@@ -7,6 +7,7 @@
   --h3Green: rgb(23, 69, 99);
   --tableGreenEven: rgb(23, 59, 52);
   --tableGreenOdd: rgb(21, 58, 46);
+  --articleText:rgb(176, 214, 230);
 
 }
 
@@ -15,7 +16,7 @@ body {
   }
 
 a{
-  color:rgb(118, 184, 127);
+  color:var(--h2Green);
   text-decoration: none;
 }
 
@@ -42,6 +43,8 @@ h2{
 p{
   font-family: 'FOT-NewRodin Pro', sans-serif;
   font-weight: bold;
+  padding: none;
+  margin: none;
 }
 
 /* navigation ------------------------------------------------------------------*/
@@ -91,7 +94,8 @@ p{
   margin-left:3%;
   margin-bottom: 20px;
   background-color: var(--articleGreen);
-  height:700px;
+  height:450px;
+  border-radius: 1%;
 }
 .articleName{
   color: var(--h3Green);
@@ -103,6 +107,7 @@ p{
   text-align: justify;
   padding-left: 3%;
   width: 40%;
+  color:var(--articleText);
 }
 .articleImage{
   float: right;
@@ -127,6 +132,25 @@ p{
 }
 
 /* decks -------------------------------------------------------------------*/
+
+
+button{
+  border: 2pt solid black;
+  background-color: var(--subnavHover);
+  border-radius: 5%;
+  margin:10px;
+}
+button:hover{
+  border: 2pt solid var(--h2Green);
+  background-color: var(--articleText);
+  cursor: pointer;
+}
+.deckIcon{
+  margin: 1px;
+  padding: none;
+  border: 1pt solid black;
+  border-radius: 5%;
+}
 
 .decksWrapper{
   width: 100%;
@@ -164,37 +188,6 @@ h4{
 }
 
 
-
-
-table{
-  display: flex;
-  justify-content: center;
-  border-collapse: collapse;
-}
-td, th {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  text-align: left;
-  padding: 10px;
-  margin:0px;
-}
-tr:nth-child(even) {
-  background-color: var(--tableGreenEven);
-}
-
-tr:nth-child(odd) {
-  background-color: var(--tableGreenOdd);
-}
-tr:hover{
-  background-color: var(--h3Green);
-}
-.tableHeader{
-  background-color: var(--h3Green);
-}
-.tableLink{
-  text-align: center;
-}
-
 #decksTableInput{
   display: inline-block;
   background-image: url('/css/searchicon.png');
@@ -219,21 +212,6 @@ tr:hover{
 .preview{
   float:left;
 }
-
-
-.deckIcon{
-  border-radius: 5%;
-  border: 1pt black solid;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: none;
-  margin: none;
-  text-align: center;
-  background-color: grey;
-}
-
-
-
 
 /* events ------------------------------------------------------------------*/
 
