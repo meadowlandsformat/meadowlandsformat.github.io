@@ -1,32 +1,33 @@
 :root {
-  --darkestGreen: rgb(27, 27, 27); 
-  --articleGreen: rgb(35, 51, 87);
+  --BGgrey: rgb(29, 33, 36); 
+  --articleBlue: rgb(35, 51, 87);
   --subnavHover: rgb(147, 182, 228);
-  --h1Green:rgb(224, 66, 66);
-  --h2Green: rgb(45, 113, 153);
-  --h3Green: rgb(23, 69, 99);
-  --tableGreenEven: rgb(23, 59, 52);
-  --tableGreenOdd: rgb(21, 58, 46);
+  --h1Red:rgb(224, 66, 66);
+  --h2Blue: rgb(45, 113, 153);
+  --h3Blue: rgb(23, 69, 99);
+  --tableBlueEven: rgb(23, 59, 52);
+  --tableBlueOdd: rgb(21, 58, 46);
   --articleText:rgb(176, 214, 230);
-
 }
 
 body {
-  background-color: var(--darkestGreen);
+  background-color: var(--BGgrey);
+  margin:0;
+  padding: 0;
   }
 
 a{
-  color:var(--h2Green);
+  color:var(--h2Blue);
   text-decoration: none;
 }
 
 h1{
   text-align: center;
   font-family: 'FOT-NewRodin Pro', sans-serif;
-  font-size:  50pt;
+  font-size:  40pt;
   font-weight: 800;
   margin:0px;
-  color: var(--h1Green);
+  color: var(--h1Red);
   text-shadow: 2px 2px 4px black;
 }
 
@@ -36,7 +37,7 @@ h2{
   font-size:  30pt;
   font-weight: 800;
   margin:0px;
-  color:var(--h2Green);
+  color:var(--h2Blue);
   text-shadow: 2px 2px 4px black;
 }
 
@@ -65,6 +66,7 @@ p{
   
 }
 .subnav{
+  display: inline;
   padding:5px;
   margin:20px;
   border-radius: 5px;
@@ -75,46 +77,41 @@ p{
   color: black;
 }
 .active{
-  background-color: var(--articleGreen);
-}
-
-.icon{
-  float:left;
-  vertical-align:middle;
-  margin: 0%;
-  border: 0%;
-  height: 25px;
+  background-color: var(--articleBlue);
 }
 
 /* articles ------------------------------------------------------------------*/
 
+
 .articleWrapper{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right:3%;
-  margin-left:3%;
+  margin-left:10%;
   margin-bottom: 20px;
-  background-color: var(--articleGreen);
+  background-color: var(--articleBlue);
   height:450px;
-  border-radius: 1%;
+  border-radius: 1px;
+  width: 80%;
 }
+
 .articleName{
-  color: var(--h3Green);
+  color: var(--h3Blue);
   text-align: left;
   padding-left: 1%;
 }
 .articleText{
   float:left;
   text-align: justify;
-  padding-left: 3%;
-  width: 40%;
+  margin-left: 10%;
+  width: 60%;
   color:var(--articleText);
 }
+
 .articleImage{
   float: right;
   display: inline;
   text-align: right;
-  margin-right: 5%;
-  border-radius: 5%;
+  margin-right: 10%;
+  border-radius: 5px;
   box-shadow: 8px 8px 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
 }
 
@@ -128,7 +125,7 @@ p{
   width: 99%;
   height: 800px;
   border: inset;
-  border-color: var(--articleGreen);
+  border-color: var(--articleBlue);
 }
 
 /* decks -------------------------------------------------------------------*/
@@ -137,11 +134,12 @@ p{
 button{
   border: 2pt solid black;
   background-color: var(--subnavHover);
-  border-radius: 5%;
-  margin:10px;
+  border-radius: 5px;
+  margin:3px;
+  padding: none;
 }
 button:hover{
-  border: 2pt solid var(--h2Green);
+  border: 2pt solid var(--h2Blue);
   background-color: var(--articleText);
   cursor: pointer;
 }
@@ -149,7 +147,7 @@ button:hover{
   margin: 1px;
   padding: none;
   border: 1pt solid black;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .decksWrapper{
@@ -162,10 +160,19 @@ button:hover{
 .decks{
   display: inline-block;
   width:45%;
-  background-color: var(--articleGreen);
+  background-color: var(--articleBlue);
   margin: 0;
   padding: 0;
-  border-radius: 2%;
+  border-radius: 5px;
+}
+
+.decksSample{
+  display: block;
+  width:80%;
+  background-color: var(--articleBlue);
+  margin-left:10%;
+  padding: 0;
+  border-radius: 5px;
 }
 
 .decksIframe{
@@ -173,8 +180,8 @@ button:hover{
   width:99%;
   height:448px;
   padding-top: 2pt;
-  border: solid 1pt var(--articleGreen);
-  border-radius: 2%;
+  border: solid 1pt var(--articleBlue);
+  border-radius: 5px;
 }
 
 h4{
@@ -183,7 +190,7 @@ h4{
   font-size:  20pt;
   font-weight: 800;
   margin:0px;
-  color:var(--h2Green);
+  color:var(--h2Blue);
   text-shadow: 2px 2px 4px black;
 }
 
@@ -194,7 +201,7 @@ h4{
   font-size: 16px;
   font-family: 'FOT-NewRodin Pro', sans-serif;
   padding: 12px 20px 12px 40px;
-  border: 4px inset var(--darkestGreen);
+  border: 4px inset var(--BGgrey);
   margin-left: 17%;
 }
 
@@ -206,11 +213,12 @@ h4{
   font-weight: 500;
   margin:0px;
   margin-left: 15%;
-  color:var(--h2Green);
+  color:var(--h2Blue);
   text-shadow: 2px 2px 4px black;
 }
 .preview{
   float:left;
+  height:600px;
 }
 
 /* events ------------------------------------------------------------------*/
