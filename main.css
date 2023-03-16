@@ -5,8 +5,6 @@
   --h1Red:rgb(224, 66, 66);
   --h2Blue: rgb(45, 113, 153);
   --h3Blue: rgb(23, 69, 99);
-  --tableBlueEven: rgb(23, 59, 52);
-  --tableBlueOdd: rgb(21, 58, 46);
   --articleText:rgb(176, 214, 230);
 }
 
@@ -24,7 +22,7 @@ a{
 h1{
   text-align: center;
   font-family: 'FOT-NewRodin Pro', sans-serif;
-  font-size:  40pt;
+  font-size:30pt;
   font-weight: 800;
   margin:0px;
   color: var(--h1Red);
@@ -34,7 +32,7 @@ h1{
 h2{
   text-align: center;
   font-family: 'FOT-NewRodin Pro', sans-serif;
-  font-size:  30pt;
+  font-size:  25pt;
   font-weight: 800;
   margin:0px;
   color:var(--h2Blue);
@@ -68,9 +66,8 @@ p{
 .subnav{
   display: inline;
   padding:5px;
-  margin:20px;
+  margin:2%;
   border-radius: 5px;
-
 }
 .subnav:hover{
   background-color: var(--subnavHover);
@@ -105,6 +102,7 @@ p{
   width: 60%;
   color:var(--articleText);
 }
+
 
 .articleImage{
   float: right;
@@ -194,28 +192,6 @@ h4{
   text-shadow: 2px 2px 4px black;
 }
 
-
-#decksTableInput{
-  display: inline-block;
-  background-image: url('/css/searchicon.png');
-  font-size: 16px;
-  font-family: 'FOT-NewRodin Pro', sans-serif;
-  padding: 12px 20px 12px 40px;
-  border: 4px inset var(--BGgrey);
-  margin-left: 17%;
-}
-
-#decksTableID{
-  display: inline-block;
-  text-align: center;
-  font-family: arial;
-  font-size:  15pt;
-  font-weight: 500;
-  margin:0px;
-  margin-left: 15%;
-  color:var(--h2Blue);
-  text-shadow: 2px 2px 4px black;
-}
 .preview{
   float:left;
   height:600px;
@@ -223,18 +199,3 @@ h4{
 
 /* events ------------------------------------------------------------------*/
 
-.mapWrapper{
-  display: inline-block;
-  width: 99%;
-  text-align: center;
-  border: none;
-}
-
-.mapIframe{
-  display: inline-block;
-  width: 99%;
-  text-align: center;
-  border: none;
-  width:100%;
-  height:800px;
-}

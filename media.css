@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+
+    h1{
+       font-size: x-large; 
+    }
+    h2{
+        font-size:large; 
+    }
+    h4{
+        font-size: small;
+    }
+    p{
+        font-size: small;
+    }
+
+    .topnav{
+      font-size: 10px;
+    }
+    .subnav{
+      font-size: 12px;
+    }
+    .articleWrapper{
+      width: 90%;
+    }
+    .articleText{
+      width: 80%;
+      font-size: 14px;
+    }
+    .articleImage{
+        display: flex;
+        float: none;
+        margin: 25%;
+        width: 50%;
+    }
+
+    button{
+        width: 25%;
+        background-color: none;
+        border: none;
+    }
+    .deckIcon{
+        width:99%;
+        float:none;
+        margin: none;
+        padding: none;
+    }
+    .deckTitle{
+        display: none;
+    }
+
+    .decks{
+        display: block;
+        width:99%;
+    }
+    .decksWrapper{
+        float: none;
+
+    }
+    .decksSample{
+        float:right;
+        display: block;
+        width:99%;
+        margin-left:none;
+    }
+    .preview{
+        float:right;
+        width: 99%;
+        height:600px;
+    }
+    .decksIframe{
+        float: none;
+        display: block;
+        width:99%;
+    }
+
+    .rulingsIframe{
+        width: 99%;
+    }
+  }
