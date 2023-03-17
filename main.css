@@ -85,7 +85,7 @@ p{
   margin-left:10%;
   margin-bottom: 20px;
   background-color: var(--articleBlue);
-  height:450px;
+  height: 450px;
   border-radius: 1px;
   width: 80%;
 }
@@ -117,13 +117,26 @@ p{
 
 /* cards -------------------------------------------------------------------*/
 
+.cardsIframe{
+  width: 90%;
+  height: 800px;
+  margin-left: 5%;
+  border: inset;
+  border-color: var(--articleBlue);
+  border-radius: 5px;
+  position: relative;
+  top: -100px
+}
+
 /* rules -------------------------------------------------------------------*/
 
 .rulingsIframe{
-  width: 99%;
+  width: 90%;
   height: 800px;
+  margin-left: 5%;
   border: inset;
   border-color: var(--articleBlue);
+  border-radius: 5px;
 }
 
 /* decks -------------------------------------------------------------------*/
@@ -171,6 +184,8 @@ button:hover{
   margin-left:10%;
   padding: 0;
   border-radius: 5px;
+  float:left;
+  height:600px;
 }
 
 .decksIframe{
@@ -181,6 +196,13 @@ button:hover{
   border: solid 1pt var(--articleBlue);
   border-radius: 5px;
 }
+.deckTitle{
+  font-family: 'FOT-NewRodin Pro', sans-serif;
+  font-weight: bold;
+  padding: none;
+  margin: none;
+  line-height: 0px;
+}
 
 h4{
   text-align: center;
@@ -190,11 +212,6 @@ h4{
   margin:0px;
   color:var(--h2Blue);
   text-shadow: 2px 2px 4px black;
-}
-
-.preview{
-  float:left;
-  height:600px;
 }
 
 /* events ------------------------------------------------------------------*/

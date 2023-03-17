@@ -26,7 +26,7 @@
 
 
 
-<h1>Recently featured:</h1>
+<h1>Recently Featured Decks:</h1>
 
 
 
@@ -48,25 +48,21 @@
 <h1>Sample Decks</h1>
 
 <div class="decksWrapper">
-    <div class="decksSample preview">
-        <iframe class="decksIframe " src = "https://www.duelingbook.com/deck?id=00000000" > </iframe>
-    </div>
     <div class="decksSample">
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687029'"><img class="deckIcon" src="icons/iconChaosDragon.jpg">   <p class="deckTitle">Chaos Dragon</p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687277'"><img class="deckIcon" src="icons/iconConstellar.jpg">    <p class="deckTitle">Constellar </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687287'"><img class="deckIcon" src="icons/iconDinoRabbit.jpg">    <p class="deckTitle">Dino Rabbit</p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687279'"><img class="deckIcon" src="icons/iconEvilswarm.jpg">     <p class="deckTitle">Evilswarm  </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687281'"><img class="deckIcon" src="icons/iconFireFist.jpg">      <p class="deckTitle">Fire Fist  </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687289'"><img class="deckIcon" src="icons/iconGadget.jpg">        <p class="deckTitle">Gadgets    </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687292'"><img class="deckIcon" src="icons/iconGeargia.jpg">       <p class="deckTitle">Geargia    </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687282'"><img class="deckIcon" src="icons/iconHero.jpg">          <p class="deckTitle">HERO Beat  </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687285'"><img class="deckIcon" src="icons/iconInfernity.jpg">     <p class="deckTitle">Infernity  </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687293'"><img class="deckIcon" src="icons/iconMermail.jpg">       <p class="deckTitle">Mermail    </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687022'"><img class="deckIcon" src="icons/iconSpellbook.jpg">     <p class="deckTitle">Spellbook  </p></button>
-        <button onclick="document.getElementById('previewWindow').src = 'https://www.duelingbook.com/deck?id=12687306'"><img class="deckIcon" src="icons/iconWindup.jpg">        <p class="deckTitle">Wind-Up    </p></button>
-        <br>
+        <iframe class="decksIframe " id="previewWindow" src = "" > </iframe>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687029')"><p class="deckTitle">Chaos Dragon</p><img class="deckIcon" src="icons/iconChaosDragon.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687277')"><p class="deckTitle">Constellar  </p><img class="deckIcon" src="icons/iconConstellar.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687287')"><p class="deckTitle">Dino Rabbit </p><img class="deckIcon" src="icons/iconDinoRabbit.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687279')"><p class="deckTitle">Evilswarm   </p><img class="deckIcon" src="icons/iconEvilswarm.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687281')"><p class="deckTitle">Fire Fist   </p><img class="deckIcon" src="icons/iconFireFist.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12688898')"><p class="deckTitle">Gadgets     </p><img class="deckIcon" src="icons/iconGadget.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687292')"><p class="deckTitle">Geargia     </p><img class="deckIcon" src="icons/iconGeargia.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687282')"><p class="deckTitle">HERO Beat   </p><img class="deckIcon" src="icons/iconHero.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12703586')"><p class="deckTitle">Infernity   </p><img class="deckIcon" src="icons/iconInfernity.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687293')"><p class="deckTitle">Mermail     </p><img class="deckIcon" src="icons/iconMermail.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687022')"><p class="deckTitle">Spellbook   </p><img class="deckIcon" src="icons/iconSpellbook.jpg"></button>
+            <button onclick="showDeck('https://www.duelingbook.com/deck?id=12687306')"><p class="deckTitle">Wind-Up     </p><img class="deckIcon" src="icons/iconWindup.jpg"></button>
     </div>
 </div>
-        <br><br><br><br><br><br><br><br>
 </body>
 </html>

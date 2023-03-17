@@ -15,15 +15,15 @@
 
     .topnav{
       font-size: 10px;
+      height:auto;
     }
     .subnav{
       font-size: 12px;
     }
-    .articleWrapper{
-      width: 90%;
-    }
     .articleText{
-      width: 80%;
+      width: 90%;
+      padding: 2%;
+      margin: 2%;
       font-size: 14px;
     }
     .articleImage{
@@ -31,6 +31,7 @@
         float: none;
         margin: 25%;
         width: 50%;
+        size: 50%;
     }
 
     button{
@@ -72,7 +73,6 @@
         display: block;
         width:99%;
     }
-
     .rulingsIframe{
         width: 99%;
     }
