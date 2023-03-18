@@ -68,10 +68,12 @@ p{
   padding:5px;
   margin:2%;
   border-radius: 5px;
+  transition: 0.1s;
 }
 .subnav:hover{
   background-color: var(--subnavHover);
   color: black;
+  transition: 0.1s;
 }
 .active{
   background-color: var(--articleBlue);
@@ -86,10 +88,10 @@ p{
   margin-bottom: 20px;
   background-color: var(--articleBlue);
   height: 450px;
-  border-radius: 1px;
+  border-radius: 5px;
   width: 80%;
+  background-size:100%;
 }
-
 .articleName{
   color: var(--h3Blue);
   text-align: left;
@@ -102,8 +104,6 @@ p{
   width: 60%;
   color:var(--articleText);
 }
-
-
 .articleImage{
   float: right;
   display: inline;
@@ -111,6 +111,25 @@ p{
   margin-right: 10%;
   border-radius: 5px;
   box-shadow: 8px 8px 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+
+
+.bannerBar{
+  width:100%; 
+  background-color: var(--BGgrey); 
+  margin-top: 20%; 
+  padding: none; 
+  margin-bottom:none;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bannerBar:hover{
+  background-color: var(--h3Blue); 
+  transition: 0.3s;
+}
+.bannerIcon{
+  vertical-align: middle; padding-bottom:10px;
 }
 
 /* about -------------------------------------------------------------------*/
@@ -148,11 +167,13 @@ button{
   border-radius: 5px;
   margin:3px;
   padding: none;
+  transition: 0.1s;
 }
 button:hover{
   border: 2pt solid var(--h2Blue);
   background-color: var(--articleText);
   cursor: pointer;
+  transition: 0.1s;
 }
 .deckIcon{
   margin: 1px;
