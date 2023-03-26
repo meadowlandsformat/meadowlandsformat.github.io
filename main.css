@@ -46,6 +46,29 @@ p{
   margin: none;
 }
 
+dl{
+  font-family: 'FOT-NewRodin Pro', sans-serif;
+  color: var(--articleBlue);
+  font-weight: 1000;
+  
+}
+
+dt{
+  font-family: 'FOT-NewRodin Pro', sans-serif;
+  color: var(--articleBlue);
+  font-weight: 1000;
+  padding-left: 5px;
+}
+
+dd{
+  font-family: 'FOT-NewRodin Pro', sans-serif;
+  color: var(--articleBlue);
+  font-size:x-small;
+  line-height: 175%;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
 /* navigation ------------------------------------------------------------------*/
 
 .topnav{
@@ -103,6 +126,7 @@ p{
   margin-left: 10%;
   width: 60%;
   color:var(--articleText);
+
 }
 .articleImage{
   float: right;
@@ -133,6 +157,14 @@ p{
 }
 
 /* about -------------------------------------------------------------------*/
+
+.banList{
+  display:inline-block;
+  width: 18%;
+  background-color: rgba(0,0,0, 0.3);
+  border-radius: 5px;
+  vertical-align: top;
+}
 
 /* cards -------------------------------------------------------------------*/
 
